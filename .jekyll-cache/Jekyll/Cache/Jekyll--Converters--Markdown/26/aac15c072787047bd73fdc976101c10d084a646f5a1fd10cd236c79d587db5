@@ -1,0 +1,12 @@
+I"¸<h2 id="current-development">Current Development</h2>
+
+<p>SAFE-BOLT development begins with simulation, robot and hand integration, Cartesian motion, dexterous hand control and assembly-oriented manipulation primitives.</p>
+
+<div class="media-placeholder">Add approved SAFE-BOLT simulation video or GIF here.</div>
+
+<h2 id="assembly-demonstrator">Assembly Demonstrator</h2>
+
+<p>The assembly task is organized around picking, alignment, placement and bolt-tightening operations. The demonstrator provides a concrete testbed for bimanual coordination, force-aware control and eventual learning-based execution.</p>
+
+<div class="media-placeholder">Add approved assembly sequence imagery here.</div>
+:ET

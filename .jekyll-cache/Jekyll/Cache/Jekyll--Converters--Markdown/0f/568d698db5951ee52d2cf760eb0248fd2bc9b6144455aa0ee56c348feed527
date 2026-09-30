@@ -1,0 +1,20 @@
+I"�<h2 id="01--digital-twin">01 · Digital Twin</h2>
+
+<p>Transfer the laboratory environment, robot and task-relevant objects into simulation using geometric and interactive models.</p>
+
+<h2 id="02--human-demonstration">02 · Human Demonstration</h2>
+
+<p>Record task demonstrations together with structured subtask narration, procedural context and explicit success conditions.</p>
+
+<h2 id="03--policy-learning-in-simulation">03 · Policy Learning in Simulation</h2>
+
+<p>Retarget demonstrated motion to bimanual robots and train policies to achieve narrated subtask goals despite differences in morphology and contact configuration.</p>
+
+<h2 id="04--safety-constrained-control">04 · Safety-Constrained Control</h2>
+
+<p>Decompose procedures into manipulation primitives such as align, insert, squeeze, seal and fasten, then execute them with closed-loop controllers and explicit force or safety constraints.</p>
+
+<h2 id="05--real-world-feedback">05 · Real-World Feedback</h2>
+
+<p>Use system identification and multimodal perception to reduce the sim-to-real gap and trigger online corrections when physical execution diverges from the expected state.</p>
+:ET

@@ -1,0 +1,9 @@
+# Jekyll generated website
+_site/
+
+# Local Ruby/Bundler dependencies
+.bundle/
+vendor/
+
+# OS files
+.DS_Store

@@ -1,0 +1,1021 @@
+/* ============================================================
+   SAFE-BOLT — MAIN STYLESHEET
+   ============================================================
+
+   IMPORTANT:
+   colors.css MUST be loaded BEFORE this file.
+
+   Main files:
+   - colors.css = color definitions
+   - style.css  = website layout and appearance
+
+   ============================================================ */
+
+
+/* ============================================================
+   01. GLOBAL / BASE
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background: var(--paper, #f7f8f5);
+  color: var(--text, #0b1f3a);
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ============================================================
+   02. HEADER
+   ============================================================ */
+
+.site-header {
+  height: 104px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 28px;
+
+  padding: 0 4vw;
+
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  background: rgba(247, 248, 245, 0.96);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid var(--ink-08, rgba(11, 31, 58, 0.08));
+}
+
+
+/* ============================================================
+   03. HEADER BRAND
+   UT AUSTIN LOGO | SAFE-BOLT
+   ============================================================ */
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  flex-shrink: 0;
+}
+
+
+/* ------------------------------------------------------------
+   UT AUSTIN LOGO
+
+   CHANGE THIS:
+   width = size of UT Austin logo
+   ------------------------------------------------------------ */
+
+.ut-logo {
+  width: 450px;                 /* <<< LOGO SIZE */
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ------------------------------------------------------------
+   VERTICAL DIVIDER
+   UT Austin | SAFE-BOLT
+   ------------------------------------------------------------ */
+
+.brand-divider {
+  width: 1px;
+  height: 42px;
+
+  background: var(--line, #dbe1e7);
+
+  flex-shrink: 0;
+}
+
+
+/* ------------------------------------------------------------
+   SAFE-BOLT TEXT IN HEADER
+
+   CHANGE THIS:
+   font-size = size of SAFE-BOLT
+   ------------------------------------------------------------ */
+
+.project-brand {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 40px;              /* <<< SAFE-BOLT SIZE */
+  font-weight: 700;
+
+  letter-spacing: -0.035em;
+
+  color: var(--ink, #0b1f3a);
+
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   04. NAVIGATION
+   Project | Research | Applications | Demo | ...
+   ============================================================ */
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;                    /* <<< SPACE BETWEEN TABS */
+
+  font-size: 15px;              /* <<< NAVIGATION TEXT SIZE */
+  font-weight: 700;
+}
+
+.nav a {
+  transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.text-link:hover {
+  color: var(--burnt, #bf5700);
+}
+
+
+/* Mobile navigation button */
+
+.menu-button {
+  display: none;
+
+  border: 0;
+
+  background: none;
+
+  color: var(--ink, #0b1f3a);
+
+  font-size: 27px;
+
+  cursor: pointer;
+}
+
+
+/* ============================================================
+   05. GENERAL SECTIONS
+   ============================================================ */
+
+.section {
+  position: relative;
+
+  max-width: var(--max, 1440px);
+
+  margin: auto;
+
+  padding: 105px 7vw;
+
+  border-bottom: 1px solid var(--line, #dbe1e7);
+}
+
+
+/* ============================================================
+   06. EYEBROW / SMALL SECTION LABELS
+
+   Examples:
+   DOE GENESIS MISSION · AI-DRIVEN AUTONOMOUS LABORATORIES
+   THE PROJECT
+   RESEARCH PIPELINE
+   ============================================================ */
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+
+  color: var(--burnt, #bf5700);
+
+  text-transform: uppercase;
+}
+
+
+/* ============================================================
+   07. HEADINGS
+   ============================================================ */
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  color: var(--ink, #0b1f3a);
+}
+
+
+/* Main SAFE-BOLT title */
+
+h1 {
+  margin: 28px 0;
+
+  font-size: clamp(66px, 8vw, 128px);
+
+  line-height: 0.84;
+
+  letter-spacing: -0.065em;
+}
+
+
+/* BOLT part of SAFE-BOLT */
+
+h1 span {
+  color: var(--burnt, #bf5700);
+}
+
+
+/* Major section headings */
+
+h2 {
+  max-width: 1050px;
+
+  font-size: clamp(34px, 4.3vw, 64px);
+
+  line-height: 1.04;
+
+  letter-spacing: -0.04em;
+}
+
+
+/* Smaller headings */
+
+h3 {
+  font-size: 23px;
+}
+
+
+/* ============================================================
+   08. BODY COPY
+   ============================================================ */
+
+.body-copy {
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color: var(--text-secondary, #42536d);
+}
+
+
+/* ============================================================
+   09. TWO-COLUMN LAYOUT
+   ============================================================ */
+
+.split {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+}
+
+
+/* ============================================================
+   10. HOME INTRO / HERO
+   ============================================================ */
+
+.home-intro {
+  min-height: calc(100vh - 104px);
+
+  align-items: center;
+}
+
+
+/* SAFE-BOLT full project title */
+
+.home-intro h2 {
+  font-size: clamp(24px, 2.3vw, 36px);
+
+  line-height: 1.16;
+}
+
+
+/* Right-hand introductory paragraph */
+
+.hero-copy-right > p {
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   11. BUTTON AREA
+   ============================================================ */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin: 34px 0;
+}
+
+
+/* General button */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 15px 22px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+
+/* Primary orange button */
+
+.primary {
+  background: var(--burnt, #bf5700);
+
+  color: var(--white, #ffffff);
+}
+
+
+/* Secondary outlined button */
+
+.secondary {
+  border: 1px solid var(--ink, #0b1f3a);
+}
+
+
+/* ============================================================
+   12. HERO METADATA PILLS
+
+   Examples:
+   The University of Texas at Austin
+   Phase I
+   Advanced Robotics
+   ============================================================ */
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.hero-meta span {
+  padding: 8px 12px;
+
+  border: 1px solid var(--line, #dbe1e7);
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: var(--ink, #0b1f3a);
+}
+
+
+/* ============================================================
+   13. DARK RESEARCH PIPELINE SECTION
+   ============================================================ */
+
+.dark {
+  max-width: none;
+
+  background: var(--ink, #0b1f3a);
+
+  color: var(--white, #ffffff);
+}
+
+.dark .section-inner {
+  max-width: 1230px;
+
+  margin: auto;
+}
+
+.dark h2 {
+  color: var(--white, #ffffff);
+}
+
+
+/* ============================================================
+   14. RESEARCH PIPELINE
+   ============================================================ */
+
+.pipeline {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 1px;
+
+  margin-top: 52px;
+
+  background: var(--white-12, rgba(255, 255, 255, 0.12));
+}
+
+
+/* Individual research stage */
+
+.pipeline article {
+  min-height: 250px;
+
+  padding: 28px;
+
+  background: var(--ink, #0b1f3a);
+}
+
+
+/* Stage number: 01, 02, 03... */
+
+.pipeline article > span {
+  color: var(--tech, #20b8c8);
+
+  font-weight: 800;
+}
+
+
+/* Stage title */
+
+.pipeline h3 {
+  margin-top: 26px;
+
+  color: var(--white, #ffffff);
+}
+
+
+/* Stage description */
+
+.pipeline p {
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: var(--text-on-dark, #aebbd0);
+}
+
+
+/* ============================================================
+   15. CARD GRIDS
+   ============================================================ */
+
+.feature-grid,
+.news-grid,
+.team-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+
+  max-width: 1050px;
+
+  margin: 40px 0;
+}
+
+
+/* News uses three columns on large screens */
+
+.news-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ============================================================
+   16. CARDS
+   ============================================================ */
+
+.feature-card,
+.person-card {
+  min-height: 210px;
+
+  padding: 34px;
+
+  background: var(--surface, #ffffff);
+
+  border: 1px solid var(--line, #dbe1e7);
+
+  border-radius: var(--radius, 28px);
+}
+
+
+/* Card paragraphs */
+
+.feature-card p,
+.person-card p {
+  line-height: 1.7;
+
+  color: var(--text-secondary, #42536d);
+}
+
+
+/* Small card labels and news dates */
+
+.card-kicker,
+.post-date {
+  font-size: 11px;
+  font-weight: 800;
+
+  color: var(--burnt, #bf5700);
+
+  text-transform: uppercase;
+}
+
+
+/* Orange text links */
+
+.text-link {
+  font-weight: 800;
+
+  color: var(--burnt, #bf5700);
+}
+
+
+/* ============================================================
+   17. INTERNAL PAGES
+
+   Used by:
+   - Project
+   - Research
+   - Applications
+   - Demo
+   - Team
+   - Resources
+   - etc.
+
+   IMPORTANT:
+   No automatic nth-of-type coloring is used.
+   ============================================================ */
+
+.page-shell {
+  max-width: var(--max, 1440px);
+
+  margin: auto;
+
+  padding: 0 7vw 100px;
+}
+
+
+/* Internal page title area */
+
+.page-hero {
+  max-width: 1050px;
+
+  padding: 105px 0 48px;
+}
+
+
+/* Internal page main title */
+
+.page-hero h1 {
+  margin-bottom: 28px;
+
+  font-size: clamp(55px, 7vw, 108px);
+}
+
+
+/* Introductory paragraph below page title */
+
+.page-intro {
+  max-width: 800px;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  color: var(--text-secondary, #42536d);
+}
+
+
+/* Main content width */
+
+.page-content {
+  max-width: 900px;
+}
+
+
+/* Markdown ## heading */
+
+.page-content h2 {
+  margin-top: 58px;
+  margin-bottom: 18px;
+
+  font-size: 38px;
+}
+
+
+/* Markdown ### heading */
+
+.page-content h3 {
+  margin-top: 36px;
+}
+
+
+/* Normal Markdown text */
+
+.page-content p,
+.page-content li {
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: var(--text-secondary, #42536d);
+}
+
+
+/* Lists */
+
+.page-content ul,
+.page-content ol {
+  padding-left: 24px;
+}
+
+
+/* Links */
+
+.page-content a {
+  color: var(--burnt, #bf5700);
+
+  font-weight: 700;
+}
+
+
+/* Horizontal divider */
+
+.page-content hr {
+  margin: 50px 0;
+
+  border: 0;
+
+  border-top: 1px solid var(--line, #dbe1e7);
+}
+
+
+/* ============================================================
+   18. CALLOUT BOX
+   ============================================================ */
+
+.callout {
+  padding: 28px 32px;
+
+  background: var(--surface, #ffffff);
+
+  border: 1px solid var(--line, #dbe1e7);
+
+  border-radius: var(--radius, 28px);
+}
+
+
+/* ============================================================
+   19. MEDIA PLACEHOLDER
+   ============================================================ */
+
+.media-placeholder {
+  display: grid;
+
+  place-items: center;
+
+  min-height: 280px;
+
+  margin: 28px 0;
+
+  padding: 30px;
+
+  background: var(--grey-50, #f7f8fa);
+
+  border: 1px dashed var(--grey-300, #b9c0c8);
+
+  border-radius: var(--radius, 28px);
+
+  color: var(--muted, #60708a);
+
+  text-align: center;
+}
+
+
+/* ============================================================
+   20. NEWS PAGE
+   ============================================================ */
+
+.news-item {
+  max-width: 900px;
+
+  padding: 38px 0;
+
+  border-bottom: 1px solid var(--line, #dbe1e7);
+}
+
+.news-item h2 {
+  font-size: 34px;
+}
+
+
+/* ============================================================
+   21. INDIVIDUAL NEWS / PROJECT POSTS
+   ============================================================ */
+
+.post-shell {
+  max-width: 1050px;
+
+  margin: auto;
+
+  padding: 105px 7vw;
+}
+
+.post-title {
+  font-size: clamp(50px, 7vw, 96px);
+}
+
+.post-content {
+  max-width: 900px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.post-content p,
+.post-content li {
+  color: var(--text-secondary, #42536d);
+}
+
+
+/* ============================================================
+   22. FOOTER
+   ============================================================ */
+
+.site-footer {
+  max-width: var(--max, 1440px);
+
+  margin: 80px auto 0;
+
+  padding: 42px 7vw;
+
+  display: grid;
+
+  grid-template-columns: 1fr 2fr auto;
+
+  gap: 40px;
+
+  font-size: 12px;
+
+  color: var(--muted, #60708a);
+
+  border-top: 1px solid var(--line, #dbe1e7);
+}
+
+.site-footer div span {
+  display: block;
+
+  margin-top: 5px;
+}
+
+.site-footer p {
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   23. RESPONSIVE — SMALLER DESKTOPS
+   Screen width: 1200px and below
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  /* UT logo becomes smaller */
+  .ut-logo {
+    width: 170px;
+  }
+
+  /* SAFE-BOLT header text becomes smaller */
+  .project-brand {
+    font-size: 27px;
+  }
+
+  /* Navigation becomes slightly more compact */
+  .nav {
+    gap: 16px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* ============================================================
+   24. RESPONSIVE — TABLETS
+   Screen width: 980px and below
+   ============================================================ */
+
+@media (max-width: 980px) {
+
+  /* Header */
+  .site-header {
+    height: 88px;
+  }
+
+
+  /* UT logo */
+  .ut-logo {
+    width: 150px;
+  }
+
+
+  /* SAFE-BOLT */
+  .project-brand {
+    font-size: 24px;
+  }
+
+
+  /* Divider */
+  .brand-divider {
+    height: 34px;
+  }
+
+
+  /* Hide normal navigation */
+  .nav {
+    display: none;
+  }
+
+
+  /* Navigation when hamburger menu is opened */
+  .nav.open {
+    display: flex;
+
+    position: absolute;
+
+    top: 88px;
+    left: 0;
+    right: 0;
+
+    padding: 25px 5vw;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: var(--paper, #f7f8f5);
+
+    border-bottom: 1px solid var(--line, #dbe1e7);
+  }
+
+
+  /* Show hamburger button */
+  .menu-button {
+    display: block;
+  }
+
+
+  /* Remove forced full-screen homepage height */
+  .home-intro {
+    min-height: auto;
+  }
+
+
+  /* Two-column sections become one column */
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Research pipeline becomes two columns */
+  .pipeline {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* News becomes two columns */
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ============================================================
+   25. RESPONSIVE — MOBILE
+   Screen width: 640px and below
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+  /* ----------------------------------------------------------
+     HEADER
+     ---------------------------------------------------------- */
+
+  .site-header {
+    padding: 0 5vw;
+  }
+
+
+  /* Mobile UT logo size */
+  .ut-logo {
+    width: 112px;
+  }
+
+
+  /* Smaller space between logo, divider and SAFE-BOLT */
+  .brand {
+    gap: 9px;
+  }
+
+
+  /* Mobile divider */
+  .brand-divider {
+    height: 28px;
+  }
+
+
+  /* Mobile SAFE-BOLT size */
+  .project-brand {
+    font-size: 18px;
+  }
+
+
+  /* ----------------------------------------------------------
+     PAGE SPACING
+     ---------------------------------------------------------- */
+
+  .section {
+    padding: 76px 6vw;
+  }
+
+  .page-shell {
+    padding: 0 6vw 70px;
+  }
+
+  .page-hero {
+    padding-top: 76px;
+  }
+
+
+  /* ----------------------------------------------------------
+     ALL GRIDS BECOME ONE COLUMN
+     ---------------------------------------------------------- */
+
+  .pipeline,
+  .feature-grid,
+  .news-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ----------------------------------------------------------
+     FOOTER BECOMES ONE COLUMN
+     ---------------------------------------------------------- */
+
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ----------------------------------------------------------
+     SAFE-BOLT HOMEPAGE TITLE
+     ---------------------------------------------------------- */
+
+  .home-intro h1 {
+    font-size: clamp(58px, 20vw, 88px);
+  }
+}

@@ -1,0 +1,17 @@
+hero_description: >-
+  Enabling robot lab assistants to learn from human demonstrations, train in digital twins,
+  and execute contact-rich scientific procedures with force-aware, safety-constrained control.
+project_summary: >-
+  SAFE-BOLT develops bimanual, dexterous robotic capabilities for dynamic laboratory environments,
+  combining demonstration-driven learning, simulation, safe control, robust perception and real-world validation.
+pipeline:
+  - title: Digital Twin
+    text: Build interactive models of the laboratory, robots, task objects and sensing.
+  - title: Human Demonstration
+    text: Capture demonstrations with structured subtask narration and success criteria.
+  - title: Policy Learning
+    text: Retarget demonstrations and train bimanual manipulation policies in simulation.
+  - title: Safe Control
+    text: Execute contact-rich skills with force constraints, runtime monitoring and recovery.
+  - title: Real-World Validation
+    text: Close the sim-to-real loop with robust perception, system identification and physical experiments.

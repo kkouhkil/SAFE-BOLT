@@ -1,0 +1,24 @@
+I"<h2 id="vision">Vision</h2>
+
+<p>SAFE-BOLT aims to enable robot lab assistants that can be instructed to perform repetitive, physically demanding and safety-critical portions of scientific experiments within existing laboratory workflows.</p>
+
+<h2 id="why-safe-bolt">Why SAFE-BOLT?</h2>
+
+<p>Many laboratory procedures remain difficult to automate because they require dexterity, contact reasoning and safe interaction with tools, fixtures, liquids, glass and other challenging materials. SAFE-BOLT focuses on dual-arm robots with dexterous hands and force-aware execution.</p>
+
+<h2 id="phase-i">Phase I</h2>
+
+<p>Phase I establishes the technical foundation through digital twins, human demonstrations, simulation-based policy learning, safety-constrained real-world control, robust perception and cross-platform validation.</p>
+
+<h2 id="core-capabilities">Core capabilities</h2>
+
+<ul>
+  <li>Bimanual and dexterous manipulation</li>
+  <li>Contact-rich alignment, insertion and fastening</li>
+  <li>Human demonstration and structured task narration</li>
+  <li>Simulation-based learning and sim-to-real transfer</li>
+  <li>Force-aware closed-loop control</li>
+  <li>Runtime safety monitoring and recovery</li>
+  <li>Robust perception for reflective, transparent and difficult laboratory materials</li>
+</ul>
+:ET

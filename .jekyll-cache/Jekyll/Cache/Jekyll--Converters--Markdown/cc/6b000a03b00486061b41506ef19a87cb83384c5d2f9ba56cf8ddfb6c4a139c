@@ -1,0 +1,43 @@
+I"B<section class="section split home-intro">
+  <div>
+    <p class="eyebrow">DOE GENESIS MISSION · AI-DRIVEN AUTONOMOUS LABORATORIES</p>
+    <h1>SAFE-<span>BOLT</span></h1>
+    <h2>Safety-Assured Force-aware Execution for Bimanual Operations on Lab Tools</h2>
+  </div>
+  <div class="body-copy hero-copy-right">
+    <p>Enabling robot lab assistants to learn from human demonstrations, train in digital twins, and execute contact-rich scientific procedures with force-aware, safety-constrained control.</p>
+    <div class="actions">
+      <a class="button primary" href="/SAFE-BOLT/project/">Explore the project</a>
+      <a class="button secondary" href="/SAFE-BOLT/demo/">Watch progress</a>
+    </div>
+    <div class="hero-meta"><span>The University of Texas at Austin</span><span>Phase I</span><span>Advanced Robotics for Dynamic Laboratory Environments</span></div>
+  </div>
+</section>
+
+<section class="section split">
+  <div><p class="eyebrow">THE PROJECT</p><h2>From scientific plans to reliable physical execution.</h2></div>
+  <div class="body-copy"><p>SAFE-BOLT develops bimanual, dexterous robotic capabilities for dynamic laboratory environments, combining demonstration-driven learning, simulation, safe control, robust perception and real-world validation.</p><p><a class="text-link" href="/SAFE-BOLT/project/">Read the project overview →</a></p></div>
+</section>
+
+<section class="section dark">
+  <div class="section-inner">
+    <p class="eyebrow">RESEARCH PIPELINE</p><h2>From demonstration to deployment.</h2>
+    <div class="pipeline"><article><span>01</span><h3>Digital Twin</h3><p>Build interactive models of the laboratory, robots, task objects and sensing.</p></article><article><span>02</span><h3>Human Demonstration</h3><p>Capture demonstrations with structured subtask narration and success criteria.</p></article><article><span>03</span><h3>Policy Learning</h3><p>Retarget demonstrations and train bimanual manipulation policies in simulation.</p></article><article><span>04</span><h3>Safe Control</h3><p>Execute contact-rich skills with force constraints, runtime monitoring and recovery.</p></article><article><span>05</span><h3>Real-World Validation</h3><p>Close the sim-to-real loop with robust perception, system identification and physical experiments.</p></article></div>
+  </div>
+</section>
+
+<section class="section">
+  <p class="eyebrow">APPLICATIONS</p><h2>Representative laboratory workflows.</h2>
+  <div class="feature-grid">
+    <article class="feature-card"><span class="card-kicker">01</span><h3>Materials Synthesis &amp; Assembly</h3><p>Liquid and powder dispensing combined with contact-rich mechanical assembly, including alignment, insertion and fastening.</p></article>
+    <article class="feature-card"><span class="card-kicker">02</span><h3>Microscope-Centered Optofluidics</h3><p>Microliter pipetting, glass and film handling, and interaction with laboratory instrument controls.</p></article>
+  </div>
+  <p><a class="text-link" href="/SAFE-BOLT/applications/">Explore applications →</a></p>
+</section>
+
+<section class="section">
+  <p class="eyebrow">LATEST PROGRESS</p><h2>A living record of SAFE-BOLT development.</h2>
+  <div class="news-grid"><article class="feature-card"><span class="post-date">30 Sep 2026</span><h3><a href="/SAFE-BOLT/2026/09/30/website-foundation/">SAFE-BOLT public website foundation</a></h3><p>The SAFE-BOLT public website has been established as a lightweight Jekyll site for communicating high-level project goals, research directions, applications and develo...</p></article></div>
+  <p><a class="text-link" href="/SAFE-BOLT/news/">View all updates →</a></p>
+</section>
+:ET

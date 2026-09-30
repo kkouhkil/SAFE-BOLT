@@ -1,0 +1,14 @@
+title: SAFE-BOLT
+description: Safety-Assured Force-aware Execution for Bimanual Operations on Lab Tools
+url: ""
+baseurl: "/SAFE-BOLT"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - vendor
+  - vendor/bundle
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SETUP.md
